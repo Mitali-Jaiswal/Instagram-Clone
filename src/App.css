@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+*{
+    margin: 0px;
+}
+.App{
+    background-color: #fafafa;
+}
+.app__header {
+    position: sticky;
+    top:0;
+    z-index: 1;
+    height: 40px;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.app__headerImage{
+    width: 100px;
+    object-fit: contain;
+}
+.modal-elements{
+    text-align: center;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__signUp{
+    display: flex;
+    flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.signInToUpload{
+    border: 2px solid lightgray;
+    padding: 20px;
+    background-color: white;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+.btn{
+    color: black;
+}
+.app__posts{
+   padding: 20px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.app__postsLeft{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+   
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+@media screen and (min-width:220px) and (max-width:1024px) {
+    .app__posts{
+        padding: 20px;
+         width: 90%;
+         margin-left: auto;
+         margin-right: auto;
+     }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    .app__postsLeft{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+       
+    }
 }
