@@ -79,7 +79,7 @@ function App() {
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
-        width: 400,
+        width: 300,
         bgcolor: 'white',
         border: '2px solid #fffff',
         boxShadow: 24,
